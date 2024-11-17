@@ -1,0 +1,13 @@
+{
+  "name": "cif-suv-database",
+  "version": "1.0.0",
+  "description": "hack repo",
+  "main": "index.js",
+  
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT"
+}
+
