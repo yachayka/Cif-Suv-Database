@@ -2,12 +2,15 @@
   "name": "cif-suv-database",
   "version": "1.0.0",
   "description": "hack repo",
-  "main": "index.js",
-  
+  "main": "index.php",
+  "phpserver.browser": "chrome",
   "scripts": {
     "test": "test"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "php": "^1.1.0",
+    "php-server": "^2.0.0"
+  }
 }
-
