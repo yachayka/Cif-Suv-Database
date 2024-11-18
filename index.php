@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Информационная система электронного документооборота</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./src/frontend/css/style.css">
 </head>
 <body>
+    
     <header>
         <nav>
             <ul>
@@ -65,9 +66,27 @@
             </ul>
         </section>
     </main>
+    <?php
+        $mysql = new mysqli("localhost", "root", "root");
+        $mysql->query("SET NAMES 'utf8'");
+
+        if($mysql -> connect_error){
+            echo 'Error Number: '.$mysql->connect_errno.'<br>';
+            echo 'Error:'.$mysql->connect_error;
+
+
+        } else{
+            echo 'Host info: '.$mysql->host_info;
+        }
+
+        //$mysql->query("INSERT INTO `users_doc` (`name`, `bio`) VALUES('passport', '.txt', '')");
+
+
+        $mysql->close();
+    ?>
     <footer>
         <p>Copyright 2023</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
